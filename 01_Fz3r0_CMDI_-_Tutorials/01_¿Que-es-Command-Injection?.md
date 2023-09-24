@@ -57,18 +57,6 @@ El CMDI permite RCE (Remote Code Execution), así como acceso no autorizado a la
 - `Integridad`: Puede usarse para modificar el contenido de la aplicación.
 - `Disponibilidad`: Puede usarse para eliminar el contenido de la aplicación.
 
-
-
-
-
-##
-
-<br>
-
-<br>
-
-<br>
-
 # 🔬 Ejemplos de CMDI
 
 A continuación se muestran diferentes escenarios vulnerables a Command Injection:
