@@ -51,3 +51,8 @@ commandinjection.c      nodefault.c             trunc.c                 writeWha
 ````
 
 Si `catWrapper` se hubiera configurado con un nivel de privilegio más alto que el usuario estándar (por ejemplo `root`), se podrían ejecutar comandos arbitrarios con ese mayor privilegio.
+
+
+## Recursos
+
+[OWASP - Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
