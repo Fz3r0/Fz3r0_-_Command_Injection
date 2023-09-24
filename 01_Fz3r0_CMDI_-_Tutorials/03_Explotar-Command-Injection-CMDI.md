@@ -70,6 +70,8 @@ etc
 | timeout     | Este comando también provocará que la aplicación se quede colgada. Es útil para probar una aplicación en busca de una inyección de comandos a ciegas si el comando ping no está instalado.                                            |   |
 | nc          | Netcat se puede usar para generar una shell inversa en la aplicación vulnerable. Puedes utilizar este punto de apoyo para moverte por la máquina objetivo y buscar otros servicios, archivos o posibles formas de elevar privilegios. |   | 
 
+- `index.html defacement`
+
 Algo un poco mas complejo como un `defacement` se podría ver algo así:
 
 1. Buscar por algún archivo con la extensión `*.html` / buscar directamente por el `*.index.html` / mapear directorio default para hosting de página. 
