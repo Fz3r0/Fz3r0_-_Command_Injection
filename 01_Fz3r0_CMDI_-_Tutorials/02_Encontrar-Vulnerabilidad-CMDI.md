@@ -46,4 +46,14 @@ $()
 
 ````
 
+### 3. `Response Analyze` _(For In-Band CMDI only)_ 
+
+
+
+## Recursos
+
+- [Port Swigger - Command Injection](https://portswigger.net/web-security/os-command-injection)
+- [OWASP - Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
+- - [OWASP - Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
+
 
