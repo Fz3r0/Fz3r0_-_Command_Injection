@@ -43,7 +43,13 @@ Es el tipo de CMDI donde el atacante puede inyectar comandos en la máquina víc
 
 ## Impactos de CMDI
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/7063dce7-f5ff-4b38-8281-3be8ff954c1b)
+Acceso no autorizado a la aplicación y al sistema operativo host:
+
+- Confidencialidad: Puede usarse para acceder a información confidencial.
+- Integridad: Puede usarse para modificar el contenido de la aplicación.
+- Disponibilidad: Puede usarse para eliminar el contenido de la aplicación.
+
+
 
 ##
 
