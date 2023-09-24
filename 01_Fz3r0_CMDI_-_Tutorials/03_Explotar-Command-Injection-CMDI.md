@@ -6,7 +6,7 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 
 ### 💣 `In-Band CMDI: exploitation`
 
-1. 💥 Utilizar `shell metacharacters` como payload inicial:
+1. 💥 Utilizar `shell metacharacters` como [payload](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/blob/main/12_Fz3r0_CMDI_-_Payloads/Command_Injection_Payloads.md) inicial:
 
 ````py
 ## General deny list to be included for command injection:
