@@ -17,7 +17,8 @@ Para que una WebApp sea vulnerable a CMDI es necesario que cumpla con 2 condicio
 
 En el siguiente ejemplo la `linea 6` permite ejecutar comandos arbitrarios via `client-side input` _(es decir, que los ingresa el cliente manualmente)_
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/46d582e9-53a0-454b-b274-4ddc3489eab1)
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/1172af5d-a1a7-4ec1-a9c5-4ea6329fc3e4)
+
 
 
 
