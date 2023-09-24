@@ -51,6 +51,8 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 ¡Listo! Con esta configuración ya podemos comenzar a interceptar el tráfico entre Burp Suite y Firefox sin problemas.
 
+
+
 ## CANTO II: Instalación y configuración de Foxy Proxy
 
 1. Instalar la extensión de `Foxy Proxy` en Fiefox simplemente buscándola en google o el siguiente link:
@@ -61,6 +63,23 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 2. Se recomienda ponerlo como pin en el Firefox para tenerlo a la mano, después ir a la parte de `options`:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5c69ceae-129d-48b8-9ac3-4f9d10b343fe)
+
+3. Dar click en `add` para añadir un nuevo Proxy:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/673600c5-fecc-4af0-97ed-377960cf8fa4)
+
+4. Configurar con los parámetros del Proxy que creamos anteriormente y guardar:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/defa926c-d201-4c73-a40a-c3e4b24f67fb)
+
+5. Validar que se haya creado el Proxy:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/b6325914-e16f-4b94-8ec1-888b17b4ab76)
+
+
+
+
+
 
 
 
