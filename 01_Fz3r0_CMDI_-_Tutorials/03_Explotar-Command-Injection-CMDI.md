@@ -53,11 +53,11 @@ Algo un poco mas complejo como un `defacement` se podría ver algo así:
 1. Buscar por algún archivo con la extensión `*.html` / buscar directamente por el `*.index.html` / mapear directorio default para hosting de página. 
 
 ````sh
-# Option 1
+# Ejemplo 1
 127.0.0.1 ; find / -type f -name "*.html" &
 
-# Option 2
-127.0.0.1 ; ls /var/www
+# Ejemplo 2
+127.0.0.1 ; ls /var/www/ &
 
 ````
 
