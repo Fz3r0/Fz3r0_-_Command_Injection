@@ -51,7 +51,7 @@ etc
 - Algo un poco mas complejo como un `defacement` se podría ver algo así:
 
 ````sh
-127.0.0.1 ; cp /var/www/index.html /var/www/index.bak && echo "Hola mundo, soy Fz3r0" > /var/www/index.html
+127.0.0.1 ; cp /var/www/index.html /var/www/index.bak && echo "Hola mundo, soy Fz3r0" > /var/www/index.html &
 ````
 
 
