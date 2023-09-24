@@ -1,6 +1,6 @@
 # Command Injection
 
-## ¿Qué es?
+## ¿Qué es Command Injection?
 
 - La inyección de comandos es un ataque en el que el objetivo es ejecutar comandos arbitrarios en el sistema operativo host a través de una aplicación vulnerable.
 - Los ataques de inyección de comandos son posibles cuando una aplicación pasa datos proporcionados por el usuario de manera insegura (formularios, cookies, encabezados HTTP, etc.) a una shell del sistema.
@@ -21,12 +21,15 @@ En el siguiente ejemplo la `linea 6` permite ejecutar comandos arbitrarios via `
 
 Debido a que los 2 request son ingresados por el cliente, es tan sencillo como dividir el comando `cat /etc/passwd` en los 2 inputs arbitrarios, en caso de no estar debidamente protegido contra CMDI, se podrá ejecutar el comando en el servidor. 
 
----
+<br>
 
+<br>
 
+<br>
 
+# Ejemplos de CMDI
 
-
+A continuación se muestran diferentes escenarios vulnerables a Command Injection:
 
 ## Ejemplo 1
 
