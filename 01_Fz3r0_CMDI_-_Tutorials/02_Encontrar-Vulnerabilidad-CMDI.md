@@ -69,7 +69,8 @@ En estos casos hay que ser más creativos...
 
 - Revisar el código que se proporciona, sin embargo, combinar tanto el enfoque `Black Box` con `White Box`.
 - Mapear todos los `input vectors` que tiene la aplicación desde una perspectiva `black box`.
-- Determinar si alguno de los `input vectors` es vulnerable a CMDI. 
+- Determinar si alguno de los `input vectors` es vulnerable a CMDI.
+- Hacer un test y reporte para presentarle al cliente la vulnerabilidad. 
 
 ## 📖 Recursos
 
