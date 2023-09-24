@@ -15,11 +15,12 @@ Para que una WebApp sea vulnerable a CMDI es necesario que cumpla con 2 condicio
 1. La aplicación debe tener una `function` que ejecute comandos del sistema `system commands`
 2. Los parámetros de esta función puedan ser controlables por el usuario _(Por ejemplo, que se pueda ingresar un string entre 2 variables)_
 
-En el siguiente ejemplo la `linea 6` permite ejecutar comandos arbitrarios via `client-side input` _(es decir, que los ingresa el cliente manualmente)_
+Las 2 condiciones se pueden mostrar en el siguiente ejemplo:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/124ffb4b-d821-4383-861d-f156cf39ebeb)
 
-Debido a que los 2 request son ingresados por el cliente, es tan sencillo como dividir el comando `cat /etc/passwd` en los 2 inputs arbitrarios, en caso de no estar debidamente protegido contra CMDI, se podrá ejecutar el comando en el servidor. 
+- La `linea 6` se encarga de ejecutar comandos arbitrarios via `client-side input` _(es decir, que los ingresa el cliente manualmente)_
+- Debido a que los 2 request son inputs que vienen de 2 variables ingresadas por el cliente _(lineas 4 y 5)_, es tan sencillo como dividir el comando `cat /etc/passwd` en los 2 inputs arbitrarios, en caso de no estar debidamente protegido contra CMDI, se podrá ejecutar el comando en el servidor. 
 
 <br>
 
