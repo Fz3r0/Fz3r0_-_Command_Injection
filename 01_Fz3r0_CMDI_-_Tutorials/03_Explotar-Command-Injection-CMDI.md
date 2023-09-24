@@ -6,6 +6,20 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 
 ### 💥 `In-Band CMDI: exploitation`
 
+1. Utilizar `shell metacharacters`
+
+````sh
+## General deny list to be included for command injection:
+| ; & $ > < ' \ ! >> #
+
+Escape or filter special characters for --->>> Windows
+( ) < > & * ‘ | = ? ; [ ] ^ ~ ! . " % @ / \ : + , `
+
+Escape or filter special characters for --->>> Linux
+{ } ( ) > < & * ‘ | = ? ; [ ] $ – # ~ ! . " %  / \ : + , `
+
+````
+
 
 
 ## 📖 Recursos
