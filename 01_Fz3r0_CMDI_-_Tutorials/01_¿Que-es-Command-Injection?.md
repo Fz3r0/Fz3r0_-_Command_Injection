@@ -1,6 +1,6 @@
-# Command Injection
+# Fz3r0 OWASP 💀🐝 - Command Injection 💉
 
-## ¿Qué es Command Injection?
+## 💀 ¿Qué es Command Injection?
 
 - La inyección de comandos es un ataque en el que el objetivo es ejecutar comandos arbitrarios en el sistema operativo host a través de una aplicación vulnerable.
 - Los ataques de inyección de comandos son posibles cuando una aplicación pasa datos proporcionados por el usuario de manera insegura (formularios, cookies, encabezados HTTP, etc.) a una shell del sistema.
@@ -8,7 +8,7 @@
 - Los ataques de inyección de comandos son posibles en gran medida debido a una validación insuficiente del `input`.
 - Este ataque difiere de la Inyección de Código (Code Injection) en el sentido de que la inyección de código permite al atacante agregar su propio código que luego es ejecutado por la aplicación. En la Inyección de Comandos, el atacante extiende la funcionalidad predeterminada de la aplicación, ejecutando comandos del sistema, sin la necesidad de inyectar código.
 
-## Las 2 condiciones que se necesitan para CMDI
+## 💀 Las 2 condiciones que se necesitan para CMDI
 
 Para que una WebApp sea vulnerable a CMDI es necesario que cumpla con 2 condiciones: 
 
@@ -22,21 +22,21 @@ Las 2 condiciones se pueden mostrar en el siguiente ejemplo:
 - La `linea 6` se encarga de ejecutar comandos arbitrarios via `client-side input` _(es decir, que los ingresa el cliente manualmente)_
 - Debido a que los 2 request son inputs que vienen de 2 variables ingresadas por el cliente _(lineas 4 y 5)_, es tan sencillo como dividir el comando `cat /etc/passwd` en los 2 inputs arbitrarios, en caso de no estar debidamente protegido contra CMDI, se podrá ejecutar el comando en el servidor. 
 
-## Tipos de Command Injection 
+## 💀 Tipos de Command Injection 
 
 Existen **2 tipos de CMDI**, los 2 funcionan basicamente igual, la única diferencia es que en una se pueden ver los resultados del comando a simple vista, en la otra no. 
 
-### 1. `In-band Command Injection`
+### 💉 1. `In-band Command Injection`
 
 Es el tipo de CMDI donde el atacante puede inyectar comandos en la máquina víctima a travéz de una WebApp vulnerable y **recibe una respuesta del comando visiblemente a travéz de la aplicación.**
 
-### 2. `Blind Command Injection` 
+### 💉 2. `Blind Command Injection` 
 
 Es el tipo de CMDI donde el atacante puede inyectar comandos en la máquina víctima a travéz de una WebApp vulnerable y **NO recibe una respuesta del comando mediante el HTTP response recibido.**
 
 - Este tipo es mas complicado explotarlo por obvias razones... al no tener la respuesta del comando, existen técnicas que se pueden utilizar para validar si la aplicación es vulnerable y para poderla explotar. 
 
-## Impactos de CMDI
+## ☢️ Impactos de CMDI
 
 El CMDI permite RCE (Remote Code Execution), así como acceso no autorizado a la aplicación y al sistema operativo host, lo cual compromete:
 
