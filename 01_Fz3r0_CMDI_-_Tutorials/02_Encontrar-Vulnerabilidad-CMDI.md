@@ -48,6 +48,10 @@ $()
 
 ### 3. `Response Analyze` _(For In-Band CMDI only)_ 
 
+En caso que la respuesta que arroje el comando de un resultado que indique una vulnerabilidad, se podrá seguir forjando el comando necesario para explotar el sistema.
+
+- En unos escenarios es tan sencillo como inyectar un payload seguido de un comando para visualizar un resultado esperado, por ejemplo `;` + `ls`
+
 ## `White Box Testing`
 
 ### 1. `Source Code review` 
