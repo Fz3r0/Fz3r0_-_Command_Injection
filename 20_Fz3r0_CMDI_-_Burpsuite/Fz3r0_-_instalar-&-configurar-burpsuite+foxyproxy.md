@@ -76,6 +76,14 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/b6325914-e16f-4b94-8ec1-888b17b4ab76)
 
+6. ¡Listo! Ahora ya se puede utilizar este nuevo Proxy:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/685a876b-32bf-4e82-8f27-06c6f827058c)
+
+
+## CANTO 3: Interceptar Tráfico
+
+
 
 
 
