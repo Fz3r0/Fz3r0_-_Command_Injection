@@ -8,7 +8,7 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 
 1. Utilizar `shell metacharacters`
 
-````sh
+````py
 ## General deny list to be included for command injection:
 | ; & $ > < ' \ ! >> #
 
