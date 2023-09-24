@@ -22,6 +22,25 @@ Las 2 condiciones se pueden mostrar en el siguiente ejemplo:
 - La `linea 6` se encarga de ejecutar comandos arbitrarios via `client-side input` _(es decir, que los ingresa el cliente manualmente)_
 - Debido a que los 2 request son inputs que vienen de 2 variables ingresadas por el cliente _(lineas 4 y 5)_, es tan sencillo como dividir el comando `cat /etc/passwd` en los 2 inputs arbitrarios, en caso de no estar debidamente protegido contra CMDI, se podrá ejecutar el comando en el servidor. 
 
+## Tipos de Command Injection 
+
+Existen 2 tipos de CMDI:
+
+1. In-Band Command Injection
+2. Blind Command Injection
+
+Las 2 funcionan basicamente igual, la única diferencia es que en una se pueden ver los resultados del comando a simple vista, en la otra no. 
+
+### In-band Command Injection 
+
+Es el tipo de CMDI donde el atacante puede inyectar comandos en la máquina víctima a travéz de una WebApp vulnerable y **recibe una respuesta del comando visiblemente a travéz de la aplicación.**
+
+### Blind Command Injection 
+
+Es el tipo de CMDI donde el atacante puede inyectar comandos en la máquina víctima a travéz de una WebApp vulnerable y **NO recibe una respuesta del comando mediante el HTTP response recibido.**
+
+- Este tipo es mas complicado explotarlo por obvias razones... al no tener la respuesta del comando, existen técnicas que se pueden utilizar para validar si la aplicación es vulnerable y para poderla explotar. 
+
 <br>
 
 <br>
