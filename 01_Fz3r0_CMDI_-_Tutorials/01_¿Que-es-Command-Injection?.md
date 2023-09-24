@@ -91,7 +91,7 @@ $ ./catWrapper Soy_Fz3r0.txt
 Yo soy Fz3r0 y este es un string guardado en un .txt ejecutado con catWrapper...
 ````
 
-Sin embargo, si agregamos un punto y coma `;` y otro comando al final de esta línea, el comando se ejecuta en el binario `catWrapper` sin problemas, como cualquier one liner de bash script, por ejemplo `$ ./catWrapper "Story.txt; ls"`:
+Sin embargo, si agregamos un punto y coma `;` y otro comando al final de esta línea como `ls`, el comando se ejecuta en el binario `catWrapper` sin problemas, como cualquier one liner de bash script, seguido del comando inyectado. Por ejemplo `$ ./catWrapper "Story.txt; ls"`:
 
 ````sh
 $ ./catWrapper "Soy_Fz3r0; ls"
