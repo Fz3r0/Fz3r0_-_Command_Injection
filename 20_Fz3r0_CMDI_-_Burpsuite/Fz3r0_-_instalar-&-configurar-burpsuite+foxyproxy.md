@@ -85,6 +85,10 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 Para validar que funcione correctamente solo es necesario ir a la pestaña de `Proxy` dentro de `Burpsuite` y encender la función de `intercept`.
 
+- Entrar a la pestaña `Proxy` y encender el `intercept`:
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/c78c8404-d134-4218-a2fe-fe05f839246a)
+
 - Al navegar a cualquier URL se interceptará el tráfico como el siguiente `POST` de Google:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6c8ff49d-7626-498b-9e91-bcd59600769e)
