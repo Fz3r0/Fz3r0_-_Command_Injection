@@ -2,11 +2,11 @@
 
 ## 💀 ¿Qué es Command Injection?
 
-- La inyección de comandos es un ataque en el que el objetivo es ejecutar comandos arbitrarios en el sistema operativo host a través de una aplicación vulnerable.
-- Los ataques de inyección de comandos son posibles cuando una aplicación pasa datos proporcionados por el usuario de manera insegura (formularios, cookies, encabezados HTTP, etc.) a una shell del sistema.
+- La Inyección de Comandos o Command Injection es un ataque cuyo objetivo es ejecutar comandos arbitrarios en el sistema operativo host a través de una aplicación vulnerable.
+- Los ataques de Command Injection son posibles cuando una aplicación pasa datos proporcionados por el usuario de manera insegura **(formularios, cookies, encabezados HTTP, etc.)** a una `shell` del sistema.
 - En este tipo de ataque, los comandos del sistema proporcionados por el atacante suelen ejecutarse con los privilegios de la aplicación vulnerable.
-- Los ataques de inyección de comandos son posibles en gran medida debido a una validación insuficiente del `input`.
-- Este ataque difiere de la Inyección de Código (Code Injection) en el sentido de que la inyección de código permite al atacante agregar su propio código que luego es ejecutado por la aplicación. En la Inyección de Comandos, el atacante extiende la funcionalidad predeterminada de la aplicación, ejecutando comandos del sistema, sin la necesidad de inyectar código.
+- Los ataques de Command Injection son posibles en gran medida debido a una validación insuficiente del `input` en el código de la aplicación.
+- Este ataque difiere de la Inyección de Código _(Code Injection)_ en el sentido de que la inyección de código permite al atacante agregar su propio código que luego es ejecutado por la aplicación. En la Inyección de Comandos, el atacante extiende la funcionalidad predeterminada de la aplicación, ejecutando comandos del sistema, sin la necesidad de inyectar código.
 
 ## 💀 Las 2 condiciones que se necesitan para CMDI
 
