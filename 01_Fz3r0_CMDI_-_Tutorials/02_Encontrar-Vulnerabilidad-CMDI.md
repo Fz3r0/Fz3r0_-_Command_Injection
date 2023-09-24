@@ -23,6 +23,10 @@ Identificar todas las instancias donde la WebApp indique que está interactuando
 - Tratar de razonar la lógica de la aplicación
 - **Al mismo tiempo que hago esto, tengo activado mi `proxy` _(Burpsuite + FoxyProxy)_ para interceptar todos los `request` que hago hacia la aplicación.**
 
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/36af82ea-55d4-4605-8d04-2f57a18220cd)
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/3822e497-ce83-490e-b54c-1fa1a7e9695f)
+
 ### 📜 2. `Application Fuzzing` 
 
 Una vez que tengamos algún campo que consideremos podría ser vulnerable, es hora de hacer `fuzzing` con [payloads](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/blob/main/12_Fz3r0_CMDI_-_Payloads/Command_Injection_Payloads.md) diseñados para CMDI, es decir, `shell metacharacters`:
@@ -47,6 +51,8 @@ Una vez que tengamos algún campo que consideremos podría ser vulnerable, es ho
 $()
 
 ````
+
+
 
 ### 🕵️‍♂️ 3. `Response Analyze` _(For In-Band CMDI only)_ 
 
