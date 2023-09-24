@@ -83,13 +83,13 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 ## CANTO 3: Interceptar Tráfico
 
+Para validar que funcione correctamente solo es necesario ir a la pestaña de `Proxy` dentro de `Burpsuite` y encender la función de `intercept`.
 
+- Al navegar a cualquier URL se interceptará el tráfico como el siguiente `POST` de Google:
 
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6c8ff49d-7626-498b-9e91-bcd59600769e)
 
-
-
-
-
+¡Listo! a interceptar tráfico como si fuera el útlimo día... Se está tornando oscuro, muy oscuro... 
 
 ## Recursos
 
