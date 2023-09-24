@@ -43,11 +43,13 @@ Es el tipo de CMDI donde el atacante puede inyectar comandos en la máquina víc
 
 ## Impactos de CMDI
 
-Acceso no autorizado a la aplicación y al sistema operativo host:
+El CMDI permite RCE (Remote Code Execution), así como acceso no autorizado a la aplicación y al sistema operativo host, lo cual compromete:
 
-- Confidencialidad: Puede usarse para acceder a información confidencial.
-- Integridad: Puede usarse para modificar el contenido de la aplicación.
-- Disponibilidad: Puede usarse para eliminar el contenido de la aplicación.
+- `Confidencialidad`: Puede usarse para acceder a información confidencial.
+- `Integridad`: Puede usarse para modificar el contenido de la aplicación.
+- `Disponibilidad`: Puede usarse para eliminar el contenido de la aplicación.
+
+
 
 
 
