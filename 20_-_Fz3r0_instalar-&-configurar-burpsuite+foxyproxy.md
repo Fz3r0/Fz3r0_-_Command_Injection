@@ -2,6 +2,8 @@ Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local
 
 ## Instrucciones
 
+### Parte 1: Configurar Proxy en Firefox:
+
 Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 
 1. En nuestro navegador favorito tenemos que configurar el Proxy por defecto de Burp Suite, por ejemplo si utilizáramos Firefox seria en la parte de `Preferences (General) > Network Settings`, aunque es más sencillo solo hacer una búsqueda con la palabra `proxy` y dar click en `settings`:
@@ -16,33 +18,36 @@ Port:        8080
 ````
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf)
 
-3. Instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico `HTTPS` sin problemas:
+---
 
-2.a Con Burp Suite en ejecución, abriremos un Tab en Firefox y luego navegaremos el sitio http://burp esto nos permitirá conectarnos a Burp Suite para descargar el certificado autofirmado, haciendo clic en CA Certificate.
-
-
-Aceptamos el archivo que se descargará: cacert.der
+### Parte 2: Instalar Certificados SSL:
 
 
-2.b Habiendo descargado el archivo, necesitamos instalarlo. Desde Firefox esto se encuentra en Preferences (Privacy & Security) > Certificates.
+Para esta parte hay que instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico `HTTPS` sin problemas:
 
+1. Con Burp Suite en ejecución, abriremos un Tab en Firefox y luego navegaremos el sitio **`http://burp`** esto nos permitirá conectarnos a Burp Suite para descargar el certificado autofirmado, haciendo clic en `CA Certificate`.
 
-En el menu que se desplegara hacemos clic en Import.
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/493d50b9-0069-46f3-bf5d-acbf864c5c28)
 
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/758e54c5-67ce-4eb7-aea1-84dd173ec211)
 
-Agregamos el cacert.der que descargamos previamente y nos preguntará para qué queremos usarlo. Marcamos la primera opción: Trust this CA to identify websites.
+2. Aceptamos el archivo que se descargará: `cacert.der`
 
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/4526f84c-ce5f-44b8-9245-2d41529aa1b9)
 
-Con esta configuración ya podemos comenzar a interceptar el tráfico entre Burp Suite y Firefox sin problemas.
+3. Habiendo descargado el archivo, necesitamos instalarlo. Desde Firefox esto se encuentra en `Preferences (Privacy & Security) > Certificates` o simplemente buscando `certificates`:
 
-Recuerden que si en Burp Suite, el Proxy > Intercept esta en ON, no podrán ver pasar el tráfico y esperará a que ustedes tomen una acción: Forward, Drop, enviar a otra herramienta.
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6cd8bd0c-58a3-4873-96a0-ffd3a12e07c6)
 
+4. En el menu que se desplegara hacemos clic en `Import`.
 
-Cómo cambiar la configuración por defecto en Burp Suite?
-Desde Proxy > Options > Proxy Listeners es posible definir otros puertos, generar nuevos certificados, tomar acciones como capturar las respuestas del Server, Match & Replace, etc. En una nueva edición pondremos en práctica esto ;)
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/af55505c-c6a0-437e-91c8-d2940f203028)
 
+5. Agregamos el `cacert.der` que descargamos previamente y nos preguntará para qué queremos usarlo. Marcamos la primera opción: `Trust this CA to identify websites`.
 
-Gracias por leernos, compartiremos más entradas para que puedan ir aprendiendo sobre Burp Suite en español.
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/0032d0e5-464a-4961-8441-a312fcaa387e)
+
+¡Listo! Con esta configuración ya podemos comenzar a interceptar el tráfico entre Burp Suite y Firefox sin problemas.
 
 ## Recursos
 
