@@ -50,7 +50,16 @@ $()
 
 En caso que la respuesta que arroje el comando de un resultado que indique una vulnerabilidad, se podrá seguir forjando el comando necesario para explotar el sistema.
 
-- En unos escenarios es tan sencillo como inyectar un payload seguido de un comando para visualizar un resultado esperado, por ejemplo `;` + `ls`
+- En unos escenarios es suficiente inyectar un payload seguido de un comando para visualizar un resultado esperado, por ejemplo `;` + `ls`
+- En otros escenarios es un poco más complicado ya que algunos caracteres o comandos pueden estar bloqueados, para esto hay que hacer `fuzzing` con una serie de `payloads`.
+- En ocasiones se verán respuestas directas, en otras se podría ver un `error`, esto también podría ser explotado. 
+
+### 4. `Blind CMDI Testing` 
+
+En estos casos hay que ser más creativos... 
+
+- Una manera "colmilluda" de detectar Cblind CMDI es utilizar los comandos `ping` o `sleep` para utilizar el tiempo como medida de detección _(Muy similar al time-based SQLi)_
+- Para tener el `output` se deben hacer cosas un poco más complejas, como exportarlas en un archivo y descargarlas via web para exfiltrar los datos. 
 
 ## `White Box Testing`
 
@@ -61,6 +70,7 @@ En caso que la respuesta que arroje el comando de un resultado que indique una v
 
 - [Port Swigger - Command Injection](https://portswigger.net/web-security/os-command-injection)
 - [OWASP - Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
-- - [OWASP - Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
+- [OWASP - Command Injection Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html)
+- [OWASP - Testing for Command Injection](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection)
 
 
