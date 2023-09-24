@@ -12,10 +12,10 @@ Una vez que se encontró la vulnerabilidad `in-band` o `blind` se procede a expl
 ## General deny list to be included for command injection:
 | ; & $ > < ' \ ! >> #
 
-Escape or filter special characters for --->>> Windows
+## Escape or filter special characters for --->>> Windows
 ( ) < > & * ‘ | = ? ; [ ] ^ ~ ! . " % @ / \ : + , `
 
-Escape or filter special characters for --->>> Linux
+## Escape or filter special characters for --->>> Linux
 { } ( ) > < & * ‘ | = ? ; [ ] $ – # ~ ! . " %  / \ : + , `
 
 ````
