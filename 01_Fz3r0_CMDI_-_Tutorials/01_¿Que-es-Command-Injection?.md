@@ -24,12 +24,7 @@ Las 2 condiciones se pueden mostrar en el siguiente ejemplo:
 
 ## Tipos de Command Injection 
 
-Existen 2 tipos de CMDI:
-
-1. **`In-Band Command Injection**`**
-2. **`Blind Command Injection`**
-
-Las 2 funcionan basicamente igual, la única diferencia es que en una se pueden ver los resultados del comando a simple vista, en la otra no. 
+Existen 2 tipos de CMDI, los 2 funcionan basicamente igual, la única diferencia es que en una se pueden ver los resultados del comando a simple vista, en la otra no. 
 
 ### `In-band Command Injection`
 
