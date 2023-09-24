@@ -20,7 +20,20 @@ Las 2 condiciones se pueden mostrar en el siguiente ejemplo:
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/124ffb4b-d821-4383-861d-f156cf39ebeb)
 
 - La `linea 6` se encarga de ejecutar comandos arbitrarios via `client-side input` _(es decir, que los ingresa el cliente manualmente)_
-- Debido a que los 2 request son inputs que vienen de 2 variables ingresadas por el cliente _(lineas 4 y 5)_, es tan sencillo como dividir el comando `cat /etc/passwd` en los 2 inputs arbitrarios, en caso de no estar debidamente protegido contra CMDI, se podrá ejecutar el comando en el servidor. 
+- Debido a que los 2 request son inputs que vienen de 2 variables ingresadas por el cliente _(lineas 4 y 5)_, es tan sencillo como dividir el comando `cat /etc/passwd` en los 2 inputs arbitrarios, en caso de no estar debidamente protegido contra CMDI, se podrá ejecutar el comando en el servidor.
+
+````py
+# Simplificación:
+
+input_1 = cat
+predefinido = (espacio)
+input_2 = /etc/passwd
+
+# Resultado:
+
+$ cat /etc/passwd
+
+````
 
 ## 💀 Tipos de Command Injection 
 
