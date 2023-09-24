@@ -48,6 +48,8 @@ etc
 
 ````
 
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/0fea0616-dca8-425d-845c-2b183a4c633a)
+
 ### Ejemplos de payloads:
 
 - `Linux`:
