@@ -25,12 +25,20 @@ Identificar todas las instancias donde la WebApp indique que está interactuando
 
 Una vez que tengamos algún campo que consideremos podría ser vulnerable, es hora de hacer `fuzzing` con `payloads` diseñados para CMDI, es decir, `shell metacharacters`:
 
+- **Nota**: Depende del Sistema Operativo y el tipo de shell es el comando que se inyecta, no es lo mismo el `CMD Windows` que `Bash Linux`
+
 ````sh
 # Command Injection payloads:
+
+## Chain commands: encadena comandos unos con otros
+
 &
 &&
 |
 ||
+
+## Separator commands: separa comandos unos de otros
+
 ;
 \n
 `
