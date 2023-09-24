@@ -52,7 +52,7 @@ $()
 
 ````
 
-
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/a24f8d3c-d661-44a9-9ff1-1d2f19643cce)
 
 ### 🕵️‍♂️ 3. `Response Analyze` _(For In-Band CMDI only)_ 
 
@@ -61,6 +61,8 @@ En caso que la respuesta que arroje el comando de un resultado que indique una v
 - En unos escenarios es suficiente inyectar un payload seguido de un comando para visualizar un resultado esperado, por ejemplo `;` + `ls`
 - En otros escenarios es un poco más complicado ya que algunos caracteres o comandos pueden estar bloqueados, para esto hay que hacer `fuzzing` con una serie de `payloads`.
 - En ocasiones se verán respuestas directas, en otras se podría ver un `error`, esto también podría ser explotado. 
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/64d1318b-6642-44a4-b1e9-a009ddf5a682)
 
 ### 🕵️‍♂️ 4. `Blind CMDI Testing` 
 
