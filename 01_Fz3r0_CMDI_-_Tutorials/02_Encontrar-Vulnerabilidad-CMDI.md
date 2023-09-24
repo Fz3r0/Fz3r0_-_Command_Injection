@@ -10,7 +10,7 @@ Existen 3 perspectivas diferentes, y depende de cómo se enfrentará el escenari
 
 Si bien cada escenario es diferente y la experiencia juega un gran papel en esta perspectiva, existen ciertos tips que puedan ayudar para encontrar esta vulnerabilidad:
 
-### 1. `Mapear la Aplicación` 
+### 1. `Application Maping` 
 
 Identificar todas las instancias donde la WebApp indique que está interactuando con un sistema operativo por detrás:
 
@@ -21,4 +21,21 @@ Identificar todas las instancias donde la WebApp indique que está interactuando
 - Tratar de razonar la lógica de la aplicación
 - **Al mismo tiempo que hago esto, tengo activado mi `proxy` _(Burpsuite + FoxyProxy)_ para interceptar todos los `request` que hago hacia la aplicación.**
 
-### 1. `Mapear la Aplicación` 
+### 2. `Application Fuzzing` 
+
+Una vez que tengamos algún campo que consideremos podría ser vulnerable, es hora de hacer `fuzzing` con `payloads` diseñados para CMDI, es decir, `shell metacharacters`:
+
+````sh
+# Command Injection payloads:
+&
+&&
+|
+||
+;
+\n
+`
+$()
+
+````
+
+
