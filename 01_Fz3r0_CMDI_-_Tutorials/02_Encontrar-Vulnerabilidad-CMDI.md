@@ -8,7 +8,7 @@ Existen 3 perspectivas diferentes, y depende de cómo se enfrentará el escenari
 2. `Whitebox Test`: Tenemos el código fuente para poder hacer pruebas de seguridad y se tiene información y documentación.
 3. `Graybox Test`: Se tiene información y acceso limitados al sistema _(Una especie de combinación de las 2 anteriores)._
 
-## 💀 `Black Box Testing`
+## 👿 `Black Box Testing`
 
 Si bien cada escenario es diferente y la experiencia juega un gran papel en esta perspectiva, existen ciertos tips que puedan ayudar para encontrar esta vulnerabilidad:
 
@@ -63,7 +63,7 @@ En estos casos hay que ser más creativos...
 - Una manera "colmilluda" de detectar Cblind CMDI es utilizar los comandos `ping` o `sleep` para utilizar el tiempo como medida de detección _(Muy similar al time-based SQLi)_
 - Para tener el `output` se deben hacer cosas un poco más complejas, como exportarlas en un archivo y descargarlas via web para exfiltrar los datos. 
 
-## 💀 `White Box Testing`
+## 👼 `White Box Testing`
 
 ### 🕵️‍♂️ 1. `Source Code review` 
 
