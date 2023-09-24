@@ -137,6 +137,7 @@ Si un usuario especifica un nombre de archivo estándar, la llamada funciona com
 ## 📖 Recursos
 
 - [Port Swigger - Command Injection](https://portswigger.net/web-security/os-command-injection)
+- [Port Swigger - Using Burp to test OS Command Injection](https://portswigger.net/support/using-burp-to-test-for-os-command-injection-vulnerabilities)
 - [OWASP - Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
 - [OWASP - Command Injection Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html)
 - [OWASP - Testing for Command Injection](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection)
