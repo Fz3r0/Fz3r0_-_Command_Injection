@@ -41,6 +41,12 @@ Es el tipo de CMDI donde el atacante puede inyectar comandos en la máquina víc
 
 - Este tipo es mas complicado explotarlo por obvias razones... al no tener la respuesta del comando, existen técnicas que se pueden utilizar para validar si la aplicación es vulnerable y para poderla explotar. 
 
+## Impactos de CMDI
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/7063dce7-f5ff-4b38-8281-3be8ff954c1b)
+
+##
+
 <br>
 
 <br>
