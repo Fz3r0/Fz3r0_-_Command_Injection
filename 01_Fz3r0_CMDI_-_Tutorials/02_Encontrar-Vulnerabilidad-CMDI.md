@@ -67,6 +67,9 @@ En estos casos hay que ser más creativos...
 
 ### 🕵️‍♂️ 1. `Source Code review` 
 
+- Revisar el código que se proporciona, sin embargo, combinar tanto el enfoque `Black Box` con `White Box`.
+- Mapear todos los `input vectors` que tiene la aplicación desde una perspectiva `black box`.
+- Determinar si alguno de los `input vectors` es vulnerable a CMDI. 
 
 ## 📖 Recursos
 
