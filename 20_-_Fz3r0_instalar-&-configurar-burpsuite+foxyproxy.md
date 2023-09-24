@@ -10,7 +10,7 @@ Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 
 2. Configurar el `Proxy` con los siguientes datos:
 
-````java
+````py
 Proxy HTTP:  127.0.0.1
 Port:        8080
 ````
