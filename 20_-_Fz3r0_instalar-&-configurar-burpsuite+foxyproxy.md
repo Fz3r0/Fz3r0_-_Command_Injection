@@ -14,8 +14,9 @@ Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 Proxy HTTP:  127.0.0.1
 Port:        8080
 ````
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf)
 
-2. Como segundo paso, es importante instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico HTTPS sin problemas.
+3. Instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico `HTTPS` sin problemas:
 
 2.a Con Burp Suite en ejecución, abriremos un Tab en Firefox y luego navegaremos el sitio http://burp esto nos permitirá conectarnos a Burp Suite para descargar el certificado autofirmado, haciendo clic en CA Certificate.
 
