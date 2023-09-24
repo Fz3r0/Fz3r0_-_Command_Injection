@@ -8,6 +8,15 @@
 - Los ataques de inyección de comandos son posibles en gran medida debido a una validación insuficiente del `input`.
 - Este ataque difiere de la Inyección de Código (Code Injection) en el sentido de que la inyección de código permite al atacante agregar su propio código que luego es ejecutado por la aplicación. En la Inyección de Comandos, el atacante extiende la funcionalidad predeterminada de la aplicación, ejecutando comandos del sistema, sin la necesidad de inyectar código.
 
+## 2 cosas que se necesitan para CMDI
+
+Para que una WebApp sea vulnerable a CMDI es necesario que cumpla con 2 condiciones: 
+
+1. La aplicación debe tener una `function` que ejecute comandos del sistema `system commands`
+2. Los parámetros de esta función puedan ser controlables por el usuario _(Por ejemplo, que se pueda ingresar un string entre 2 variables)_
+
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/46d582e9-53a0-454b-b274-4ddc3489eab1)
+
 
 
 ## Ejemplo 1
