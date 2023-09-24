@@ -4,16 +4,16 @@ Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local
 
 Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 
-1. En nuestro navegador favorito tenemos que configurar el Proxy por defecto de Burp Suite, por ejemplo si utilizáramos Firefox seria en la parte de `Preferences (General) > Network Settings`:
+1. En nuestro navegador favorito tenemos que configurar el Proxy por defecto de Burp Suite, por ejemplo si utilizáramos Firefox seria en la parte de `Preferences (General) > Network Settings`, aunque es más sencillo solo hacer una búsqueda con la palabra `proxy` y dar click en `settings`:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/bf9a6047-bc45-42ad-bed0-629de87eb452)
+![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b)
 
-Haciendo clic en Settings.
-Configuraremos el Proxy con los siguientes datos:
+2. Configurar el `Proxy` con los siguientes datos:
 
-Proxy HTTP: 127.0.0.1
-Puerto: 8080
-
+````java
+Proxy HTTP:  127.0.0.1
+Port:        8080
+````
 
 2. Como segundo paso, es importante instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico HTTPS sin problemas.
 
