@@ -12,8 +12,8 @@
 
 Para que una WebApp sea vulnerable a CMDI es necesario que cumpla con 2 condiciones: 
 
-1. La aplicación debe tener una `function` que ejecute comandos del sistema `system commands`
-2. Los parámetros de esta función puedan ser controlables por el usuario _(Por ejemplo, que se pueda ingresar un string aleatorio que se ejecute en el sistema)_
+1. `Ejecutar`: La aplicación debe tener una `function` que ejecute comandos del sistema `system commands`
+2. `Insertar Parámetros`: Los parámetros de esta función puedan ser controlables por el usuario _(Por ejemplo, que se pueda ingresar un string aleatorio que se ejecute en el sistema)_
 
 Las 2 condiciones se pueden mostrar en el siguiente ejemplo:
 
