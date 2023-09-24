@@ -56,11 +56,11 @@ El CMDI permite RCE (Remote Code Execution), así como acceso no autorizado a la
 
 <br>
 
-# Ejemplos de CMDI
+# 🔬 Ejemplos de CMDI
 
 A continuación se muestran diferentes escenarios vulnerables a Command Injection:
 
-## Ejemplo 1
+## ⚗️ Ejemplo 1
 
 El siguiente código es un wrap del comando UNIX `cat`, que imprime el contenido de un archivo en la salida estándar. También es susceptible a inyección:
 
@@ -106,7 +106,7 @@ Si `catWrapper` se hubiera configurado con un nivel de privilegio más alto que 
 
 
 
-## Ejemplo 2
+## ⚗️ Ejemplo 2
 
 El siguiente programa simple acepta un nombre de archivo como argumento de línea de comandos y muestra el contenido del archivo al usuario. 
 - El programa se instala con `setuid root` porque está destinado a ser utilizado como una herramienta de aprendizaje que permite a los administradores del sistema en formación inspeccionar archivos del sistema con privilegios sin darles la capacidad de modificarlos o dañar el sistema.
@@ -125,7 +125,7 @@ Si un usuario especifica un nombre de archivo estándar, la llamada funciona com
 
 
 
-## Ejemplo 3
+## ⚗️ Ejemplo 3
 
 
 
