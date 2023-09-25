@@ -8,7 +8,7 @@ Para configurar Burpsuite ya sea en Linux o Windows e interceptar tráfico HTTP/
 2. **💀 `CANTO II`: Instalación y configuración de Foxy Proxy**
 3. **💀 `CANTO III`: Interceptar Tráfico**
 
-A continuación se muestra el paso a paso del proceso:
+A continuación se muestra el paso a paso del proceso.
 
 
 
