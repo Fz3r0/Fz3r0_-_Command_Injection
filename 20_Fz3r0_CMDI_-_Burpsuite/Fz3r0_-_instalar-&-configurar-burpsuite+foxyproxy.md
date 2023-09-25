@@ -4,8 +4,6 @@
 
 Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado** (hablaremos de esto también en esta publicación), recomendamos que sea `Mozilla Firefox`. 
 
----
-
 ### `Parte 1`: Configurar Proxy en Firefox:
 
 Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
@@ -22,8 +20,6 @@ Port:        8080
 ````
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf" alt="burpsuite_install" height=580px/> </a> </p> 
-
----
 
 ### `Parte 2`: Instalar Certificados SSL:
 
