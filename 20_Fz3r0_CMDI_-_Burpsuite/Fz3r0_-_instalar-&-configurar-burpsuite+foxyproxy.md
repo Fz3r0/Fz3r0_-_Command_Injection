@@ -8,6 +8,8 @@ Para configurar Burpsuite ya sea en Linux o Windows e interceptar tráfico HTTP/
 
 A continuación se muestra el paso a paso del proceso:
 
+
+
 ## 💀 `CANTO I`: Configurar Proxy e instalar SSL certificate en Firefox
 
 Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado**, el más recomendable es `Mozilla Firefox`. 
@@ -18,7 +20,7 @@ Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 
 1. ⭕ En nuestro navegador favorito tenemos que configurar el Proxy por defecto de Burp Suite, por ejemplo si utilizáramos Firefox seria en la parte de `Preferences (General) > Network Settings`, aunque es más sencillo solo hacer una búsqueda con la palabra `proxy` y dar click en `settings`:
 
-<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b" alt="burpsuite_install" height=320px/> </a> </p> 
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b" alt="burpsuite_install" height=300px/> </a> </p> 
 
 2. ⭕ Configurar el `Proxy` con los siguientes datos:
 
@@ -27,10 +29,9 @@ Proxy HTTP:  127.0.0.1
 Port:        8080
 ````
 
-<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf" alt="burpsuite_install" height=580px/> </a> </p> 
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf" alt="burpsuite_install" height=550px/> </a> </p> 
 
 ### 📜 `Parte 2`: Instalar Certificados SSL:
-
 
 Para esta parte hay que instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico `HTTPS` sin problemas:
 
@@ -47,7 +48,7 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 3. ⭕ Habiendo descargado el archivo, necesitamos instalarlo. Desde Firefox esto se encuentra en `Preferences (Privacy & Security) > Certificates` o simplemente buscando `certificates`:
 
-<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6cd8bd0c-58a3-4873-96a0-ffd3a12e07c6" height=450px/> </a> </p> 
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6cd8bd0c-58a3-4873-96a0-ffd3a12e07c6" height=420px/> </a> </p> 
 
 4. ⭕ En el menu que se desplegara hacemos clic en `Import`.
 
@@ -55,7 +56,7 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 5. ⭕ Agregamos el `cacert.der` que descargamos previamente y nos preguntará para qué queremos usarlo. Marcamos la primera opción: `Trust this CA to identify websites`.
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/0032d0e5-464a-4961-8441-a312fcaa387e)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/0032d0e5-464a-4961-8441-a312fcaa387e" height=280px> </a> </p> 
 
 😈 ¡Listo! Con esta configuración ya podemos comenzar a interceptar el tráfico entre Burp Suite y Firefox sin problemas. 💀🎩
 
@@ -66,11 +67,14 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 1. 🦊 Instalar la extensión de `Foxy Proxy` en Fiefox simplemente buscándola en google o el siguiente link:
 - https://addons.mozilla.org/es/firefox/addon/foxyproxy-standard/
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/e941b24e-4f7f-4ea6-a7ba-e21c07917e56)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/e941b24e-4f7f-4ea6-a7ba-e21c07917e56" height=280px> </a> </p> 
+
 
 2. 🦊 Se recomienda ponerlo como pin en el Firefox para tenerlo a la mano, después ir a la parte de `options`:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5c69ceae-129d-48b8-9ac3-4f9d10b343fe)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5c69ceae-129d-48b8-9ac3-4f9d10b343fe" height=250px> </a> </p> 
+
+![image]()
 
 3. 🦊 Dar click en `add` para añadir un nuevo Proxy:
 
@@ -87,6 +91,7 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 6. 😈 ¡Listo! Ahora ya se puede utilizar este nuevo Proxy:
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/685a876b-32bf-4e82-8f27-06c6f827058c)
+
 
 
 ## 💀 `CANTO 3`: Interceptar Tráfico
