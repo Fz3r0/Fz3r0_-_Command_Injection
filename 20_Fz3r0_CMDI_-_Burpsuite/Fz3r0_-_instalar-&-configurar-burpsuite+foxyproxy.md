@@ -1,5 +1,13 @@
 # Fz3r0 OWASP - Configuración Inicial de Burpsuite
 
+Para configurar Burpsuite ya sea en Linux o Windows e interceptar tráfico HTTP/HTTPS desde cualquier explorador solo se deben seguir 3 sencillos pasos:
+
+1. **`CANTO I`: Configurar Proxy e instalar SSL certificate en Firefox**
+2. **`CANTO II`: Instalación y configuración de Foxy Proxy**
+3. **`CANTO III`: Interceptar Tráfico**
+
+A continuación se muestra el paso a paso del proceso:
+
 ## CANTO I: Configurar Proxy e instalar SSL certificate en Firefox
 
 Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado** (hablaremos de esto también en esta publicación), recomendamos que sea `Mozilla Firefox`. 
