@@ -70,7 +70,7 @@ Para esta parte hay que instalar el certificado que Burp Suite proveé. Esto ser
 
 2. 🦊 Se recomienda ponerlo como pin en el Firefox para tenerlo a la mano, después ir a la parte de `options`:
 
-<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5c69ceae-129d-48b8-9ac3-4f9d10b343fe" height=250px> </a> </p> 
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5c69ceae-129d-48b8-9ac3-4f9d10b343fe" height=210px> </a> </p> 
 
 3. 🦊 Dar click en `Add` para añadir un nuevo Proxy:
 
