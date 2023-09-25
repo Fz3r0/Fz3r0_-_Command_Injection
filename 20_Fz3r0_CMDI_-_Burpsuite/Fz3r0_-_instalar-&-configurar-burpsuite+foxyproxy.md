@@ -14,13 +14,11 @@ A continuación se muestra el paso a paso del proceso.
 
 ## 💀 `CANTO I`: Configurar Proxy e instalar SSL certificate en Firefox
 
-Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado**, el más recomendable es `Mozilla Firefox`. 
+Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado**. _(el navegador más recomendable es `Mozilla Firefox`)_ 
 
-### 🚦 `Parte 1`: Configurar Proxy en Firefox:
+### 🚦 `Parte 1`: Configurar Proxy en Firefox
 
-Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
-
-1. ⭕ En nuestro navegador favorito tenemos que configurar el Proxy por defecto de Burp Suite, por ejemplo si utilizáramos Firefox seria en la parte de `Preferences (General) > Network Settings`, aunque es más sencillo solo hacer una búsqueda con la palabra `proxy` y dar click en `settings`:
+1. ⭕ Configurar el Proxy por defecto de Burp Suite navegando en la parte de `Preferences (General) > Network Settings`, aunque es más sencillo solo hacer una búsqueda con la palabra `proxy` y dar click en `settings`:
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b" alt="burpsuite_install" height=300px/> </a> </p> 
 
@@ -33,18 +31,17 @@ Port:        8080
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf" alt="burpsuite_install" height=550px/> </a> </p> 
 
-### 📜 `Parte 2`: Instalar Certificados SSL:
+### 📜 `Parte 2`: Instalar Certificados SSL
 
-Para esta parte hay que instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico `HTTPS` sin problemas:
+Para esta parte hay que instalar el certificado que Burp Suite proveé. Esto servirá para interceptar el tráfico `HTTPS` sin problemas:
 
-1. ⭕ Con Burp Suite en ejecución, abriremos un Tab en Firefox y luego navegaremos el sitio **`http://burp`** esto nos permitirá conectarnos a Burp Suite para descargar el certificado autofirmado, haciendo clic en `CA Certificate`.
+1. ⭕ Con Burp Suite en ejecución, abriremos un Tab en Firefox y luego navegaremos el sitio **`http://burp`** esto nos permitirá conectarnos a Burp Suite para descargar el certificado autofirmado, haciendo clic en `CA Certificate`:
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/493d50b9-0069-46f3-bf5d-acbf864c5c28"burpsuite_install" height=400px/> </a> </p> 
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/758e54c5-67ce-4eb7-aea1-84dd173ec211" height=250px/> </a> </p> 
 
-
-2. ⭕ Aceptamos el archivo que se descargará: `cacert.der`
+2. ⭕ Aceptamos el archivo que se descargará `cacert.der`:
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/4526f84c-ce5f-44b8-9245-2d41529aa1b9"/> </a> </p> 
 
@@ -52,7 +49,7 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6cd8bd0c-58a3-4873-96a0-ffd3a12e07c6" height=420px/> </a> </p> 
 
-4. ⭕ En el menu que se desplegara hacemos clic en `Import`.
+4. ⭕ En el menu que se desplegará, hacemos clic en `Import`:
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/af55505c-c6a0-437e-91c8-d2940f203028" height=400px/> </a> </p> 
 
