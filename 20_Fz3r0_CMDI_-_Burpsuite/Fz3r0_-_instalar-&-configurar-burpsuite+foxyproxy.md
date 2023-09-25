@@ -11,7 +11,6 @@ Para configurar Burpsuite ya sea en Linux o Windows e interceptar tráfico HTTP/
 A continuación se muestra el paso a paso del proceso.
 
 
-
 ## 💀 `CANTO I`: Configurar Proxy e instalar SSL certificate en Firefox
 
 Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado**. _(el navegador más recomendable es `Mozilla Firefox`)_ 
@@ -75,7 +74,7 @@ Para esta parte hay que instalar el certificado que Burp Suite proveé. Esto ser
 
 3. 🦊 Dar click en `Add` para añadir un nuevo Proxy:
 
-<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/673600c5-fecc-4af0-97ed-377960cf8fa4" height=450px> </a> </p> 
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/673600c5-fecc-4af0-97ed-377960cf8fa4" height=410px> </a> </p> 
 
 4. 🦊 Configurar con los parámetros del Proxy que creamos anteriormente y guardar:
 
@@ -83,12 +82,11 @@ Para esta parte hay que instalar el certificado que Burp Suite proveé. Esto ser
 
 5. 🦊 Validar que se haya creado el Proxy:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/b6325914-e16f-4b94-8ec1-888b17b4ab76)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/b6325914-e16f-4b94-8ec1-888b17b4ab76" height=310px> </a> </p> 
 
 6. 😈 ¡Listo! Ahora ya se puede utilizar este nuevo Proxy:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/685a876b-32bf-4e82-8f27-06c6f827058c)
-
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/685a876b-32bf-4e82-8f27-06c6f827058c"> </a> </p> 
 
 
 ## 💀 `CANTO 3`: Interceptar Tráfico
@@ -97,13 +95,14 @@ Para validar que funcione correctamente solo es necesario ir a la pestaña de `P
 
 1. 🛑 Entrar a la pestaña `Proxy` y encender el `intercept`:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/c78c8404-d134-4218-a2fe-fe05f839246a)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/c78c8404-d134-4218-a2fe-fe05f839246a"> </a> </p> 
 
 2. 🛑 Al navegar a cualquier URL se interceptará el tráfico como el siguiente `POST` de Google:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6c8ff49d-7626-498b-9e91-bcd59600769e)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6c8ff49d-7626-498b-9e91-bcd59600769e"> </a> </p> 
 
 😈 ¡Listo! a interceptar tráfico como si fuera el útlimo día... Se está tornando oscuro, muy oscuro... 💀🎩
+
 
 ## 📖 Recursos
 
