@@ -57,7 +57,7 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/0032d0e5-464a-4961-8441-a312fcaa387e)
 
-¡Listo! Con esta configuración ya podemos comenzar a interceptar el tráfico entre Burp Suite y Firefox sin problemas.
+😈 ¡Listo! Con esta configuración ya podemos comenzar a interceptar el tráfico entre Burp Suite y Firefox sin problemas. 💀🎩
 
 
 
@@ -101,7 +101,7 @@ Para validar que funcione correctamente solo es necesario ir a la pestaña de `P
 
 ![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6c8ff49d-7626-498b-9e91-bcd59600769e)
 
-¡Listo! a interceptar tráfico como si fuera el útlimo día... Se está tornando oscuro, muy oscuro... 💀🎩
+😈 ¡Listo! a interceptar tráfico como si fuera el útlimo día... Se está tornando oscuro, muy oscuro... 💀🎩
 
 ## Recursos
 
