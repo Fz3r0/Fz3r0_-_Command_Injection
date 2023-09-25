@@ -103,7 +103,7 @@ Para validar que funcione correctamente solo es necesario ir a la pestaña de `P
 
 😈 ¡Listo! a interceptar tráfico como si fuera el útlimo día... Se está tornando oscuro, muy oscuro... 💀🎩
 
-## Recursos
+## 📖 Recursos
 
 - [ArtsSEC - Configuración de Burpsuite con Foxy Proxy](https://medium.com/@ArtsSEC/burp-suite-configuraci%C3%B3n-del-proxy-88b7b90355f2)
 - [Instalar y Configurar FoxyProxy para Burp Suite, CA Certificate (SSL)](https://www.youtube.com/watch?v=lqfUclxl0K0)
