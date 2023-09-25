@@ -1,10 +1,12 @@
-
+# Fz3r0 OWASP - Configuración Inicial de Burpsuite
 
 ## CANTO I: Configurar Proxy e instalar SSL certificate en Firefox
 
 Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado** (hablaremos de esto también en esta publicación), recomendamos que sea `Mozilla Firefox`. 
 
-### Parte 1: Configurar Proxy en Firefox:
+---
+
+### `Parte 1`: Configurar Proxy en Firefox:
 
 Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 
@@ -23,7 +25,7 @@ Port:        8080
 
 ---
 
-### Parte 2: Instalar Certificados SSL:
+### `Parte 2`: Instalar Certificados SSL:
 
 
 Para esta parte hay que instalar el certificado que Burp Suite provee. Esto servirá para interceptar el tráfico `HTTPS` sin problemas:
