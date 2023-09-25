@@ -1,6 +1,6 @@
 # Fz3r0 OWASP 💀🐝 - Configuración Inicial de Burpsuite 🤮
 
-<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/1081ceee-d8ad-46e0-91e6-0bfe67905a84" height=150px/> </a> </p> 
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/1081ceee-d8ad-46e0-91e6-0bfe67905a84" height=120px/> </a> </p> 
 
 Para configurar Burpsuite ya sea en Linux o Windows e interceptar tráfico HTTP/HTTPS desde cualquier explorador solo se deben seguir 3 sencillos pasos:
 
