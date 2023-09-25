@@ -10,9 +10,7 @@ Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 
 1. En nuestro navegador favorito tenemos que configurar el Proxy por defecto de Burp Suite, por ejemplo si utilizáramos Firefox seria en la parte de `Preferences (General) > Network Settings`, aunque es más sencillo solo hacer una búsqueda con la palabra `proxy` y dar click en `settings`:
 
-<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b" alt="burpsuite_install" height=520px/> </a> </p> 
-
-
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b" alt="burpsuite_install" height=320px/> </a> </p> 
 
 2. Configurar el `Proxy` con los siguientes datos:
 
@@ -20,7 +18,8 @@ Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 Proxy HTTP:  127.0.0.1
 Port:        8080
 ````
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf)
+
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/dc9ea442-a67a-4752-a88c-d9dee06316bf" alt="burpsuite_install" height=580px/> </a> </p> 
 
 ---
 
@@ -31,21 +30,22 @@ Para esta parte hay que instalar el certificado que Burp Suite provee. Esto serv
 
 1. Con Burp Suite en ejecución, abriremos un Tab en Firefox y luego navegaremos el sitio **`http://burp`** esto nos permitirá conectarnos a Burp Suite para descargar el certificado autofirmado, haciendo clic en `CA Certificate`.
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/493d50b9-0069-46f3-bf5d-acbf864c5c28)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/493d50b9-0069-46f3-bf5d-acbf864c5c28"burpsuite_install" height=400px/> </a> </p> 
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/758e54c5-67ce-4eb7-aea1-84dd173ec211)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/758e54c5-67ce-4eb7-aea1-84dd173ec211" height=250px/> </a> </p> 
+
 
 2. Aceptamos el archivo que se descargará: `cacert.der`
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/4526f84c-ce5f-44b8-9245-2d41529aa1b9)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/4526f84c-ce5f-44b8-9245-2d41529aa1b9"/> </a> </p> 
 
 3. Habiendo descargado el archivo, necesitamos instalarlo. Desde Firefox esto se encuentra en `Preferences (Privacy & Security) > Certificates` o simplemente buscando `certificates`:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6cd8bd0c-58a3-4873-96a0-ffd3a12e07c6)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/6cd8bd0c-58a3-4873-96a0-ffd3a12e07c6" height=450px/> </a> </p> 
 
 4. En el menu que se desplegara hacemos clic en `Import`.
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/af55505c-c6a0-437e-91c8-d2940f203028)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/af55505c-c6a0-437e-91c8-d2940f203028" height=400px/> </a> </p> 
 
 5. Agregamos el `cacert.der` que descargamos previamente y nos preguntará para qué queremos usarlo. Marcamos la primera opción: `Trust this CA to identify websites`.
 
