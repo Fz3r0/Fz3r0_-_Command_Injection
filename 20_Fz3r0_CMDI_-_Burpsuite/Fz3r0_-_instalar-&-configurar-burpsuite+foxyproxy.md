@@ -2,7 +2,7 @@
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/1081ceee-d8ad-46e0-91e6-0bfe67905a84" height=120px/> </a> </p> 
 
-Para configurar `FireFox` y `Foxy Proxy` para utilizar `Burpsuite` ya sea en Linux o Windows con el objetivo de interceptar tráfico HTTP/HTTPS, solo se deben seguir 3 sencillos pasos:
+La configuración de `FireFox` y `Foxy Proxy` para utilizar `Burpsuite` ya sea en Linux o Windows con el objetivo de interceptar tráfico HTTP/HTTPS, solo consta de 3 sencillos pasos:
 
 1. **💀 `CANTO I`: Configurar Proxy e instalar SSL certificate en Firefox**
 2. **💀 `CANTO II`: Instalación y configuración de Foxy Proxy**
