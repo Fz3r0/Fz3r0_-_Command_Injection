@@ -10,7 +10,7 @@ A continuación se muestra el paso a paso del proceso:
 
 ## CANTO I: Configurar Proxy e instalar SSL certificate en Firefox
 
-Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado** (hablaremos de esto también en esta publicación), recomendamos que sea `Mozilla Firefox`. 
+Para que `Burp Suite` funcione correctamente debemos **configurar el Proxy Local en nuestro navegador favorito e instalar un Certificado**, el más recomendable es `Mozilla Firefox`. 
 
 ### `Parte 1`: Configurar Proxy en Firefox:
 
