@@ -73,15 +73,13 @@ Para esta parte hay que instalar el certificado que Burp Suite proveé. Esto ser
 
 <p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5c69ceae-129d-48b8-9ac3-4f9d10b343fe" height=250px> </a> </p> 
 
-![image]()
+3. 🦊 Dar click en `Add` para añadir un nuevo Proxy:
 
-3. 🦊 Dar click en `add` para añadir un nuevo Proxy:
-
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/673600c5-fecc-4af0-97ed-377960cf8fa4)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/673600c5-fecc-4af0-97ed-377960cf8fa4" height=450px> </a> </p> 
 
 4. 🦊 Configurar con los parámetros del Proxy que creamos anteriormente y guardar:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/defa926c-d201-4c73-a40a-c3e4b24f67fb)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/defa926c-d201-4c73-a40a-c3e4b24f67fb" height=480px> </a> </p> 
 
 5. 🦊 Validar que se haya creado el Proxy:
 
