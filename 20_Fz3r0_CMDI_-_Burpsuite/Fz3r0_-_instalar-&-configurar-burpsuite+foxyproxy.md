@@ -10,7 +10,9 @@ Antes que nada hay que desplazarnos hacia el menú para configurar el Proxy:
 
 1. En nuestro navegador favorito tenemos que configurar el Proxy por defecto de Burp Suite, por ejemplo si utilizáramos Firefox seria en la parte de `Preferences (General) > Network Settings`, aunque es más sencillo solo hacer una búsqueda con la palabra `proxy` y dar click en `settings`:
 
-![image](https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b)
+<p align="center"> <img src="https://github.com/Fz3r0/Fz3r0_-_Command_Injection/assets/94720207/5fe624b4-439b-4749-aa33-b9903529f96b" alt="burpsuite_install" height=520px/> </a> </p> 
+
+
 
 2. Configurar el `Proxy` con los siguientes datos:
 
