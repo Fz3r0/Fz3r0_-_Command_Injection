@@ -1,3 +1,7 @@
+
+
+# Lab: https://portswigger.net/web-security/os-command-injection/lab-simple
+
 # Importamos las bibliotecas necesarias
 import requests  # Importa la biblioteca 'requests' para realizar solicitudes HTTP.
 import sys  # Importa la biblioteca 'sys' para trabajar con argumentos de línea de comandos.
